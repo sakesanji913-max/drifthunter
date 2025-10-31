@@ -125,7 +125,7 @@
 
       (async () => {
         const dataParts = getParts("drifthunter.data.unityweb", 7);
-        const wasmParts = getParts("drifthunter.data.unityweb", 2);
+        const wasmParts = getParts("drifthunter.wasm.unityweb", 2);
         const [dataUrl, wasmUrl] = await Promise.all([
           mergeFiles(dataParts),
           mergeFiles(wasmParts),
